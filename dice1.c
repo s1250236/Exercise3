@@ -4,6 +4,10 @@
 #include <unistd.h>
 int main() {
   int i,ran1,ran2;
+  char name[20];
+  printf("What is your name?\n>");
+  scanf("%s",name);
+  printf("Hello,%s!\n",name);
   printf("Rolling the dice...\n");
   srand(time(NULL));
   ran1 = (rand() % 6) + 1;
